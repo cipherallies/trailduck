@@ -1,19 +1,18 @@
 module.exports = class Node {
-  children = {};
-
-  parents = {};
-
-  unvisitedChildren = {};
-
-  cycles = [];
-
-  explored = false;
-
-  name = null;
-
-  payload = {};
-
   constructor({ name, payload }) {
+    this.children = {};
+
+    this.parents = {};
+
+    this.unvisitedChildren = {};
+
+    this.cycles = [];
+
+    this.explored = false;
+
+    this.name = null;
+
+    this.payload = {};
     this.name = name;
     this.payload = payload;
   }

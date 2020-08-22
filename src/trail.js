@@ -1,19 +1,18 @@
 const Node = require('./node');
 
 module.exports = class Trail {
-  graph = {};
-
-  tree = {};
-
-  head = null;
-
-  ordered = [];
-
-  orderedKeys = [];
-
-  cycles = [];
-
   constructor(graph) {
+    this.graph = {};
+
+    this.tree = {};
+
+    this.head = null;
+
+    this.ordered = [];
+
+    this.orderedKeys = [];
+
+    this.cycles = [];
     this.graph = graph;
     this.createTree();
   }

@@ -1,11 +1,10 @@
 module.exports = class Explorer {
-  location = null;
-
-  trail = null;
-
-  history = [];
-
   constructor({ trail }) {
+    this.location = null;
+
+    this.trail = null;
+
+    this.history = [];
     this.trail = trail;
     if (this.trail.head) {
       this.location = this.trail.head.visit();
