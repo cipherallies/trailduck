@@ -1,7 +1,7 @@
-import Trail from './trail';
-import Explorer from './explorer';
+const Trail = require('./trail');
+const Explorer = require('./explorer')
 
-export default class TrailDuck {
+module.exports = class TrailDuck {
   constructor(graph) {
     this.trail = new Trail(graph);
     this.explorer = new Explorer({ trail: this.trail });

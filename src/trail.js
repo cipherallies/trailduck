@@ -1,6 +1,6 @@
-import Node from './node';
+const Node = require('./node');
 
-export default class Trail {
+module.exports = class Trail {
   graph = {};
 
   tree = {};

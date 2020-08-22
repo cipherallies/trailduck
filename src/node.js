@@ -1,4 +1,4 @@
-export default class Node {
+module.exports = class Node {
   children = {};
 
   parents = {};

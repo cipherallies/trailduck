@@ -1,4 +1,4 @@
-export default class Explorer {
+module.exports = class Explorer {
   location = null;
 
   trail = null;
