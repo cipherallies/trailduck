@@ -36,34 +36,6 @@
     "type": "git",
     "url": "https://github.com/codejamninja/trailduck"
   },
-  "scripts": {
-    "build": "npm run test && babel src -d lib",
-    "clean": "rimraf lib",
-    "format": "prettier --write ./src/**/*.js",
-    "lint": "npm run format && eslint ./",
-    "lint:fix": "npm run format && eslint --fix ./",
-    "prepublish": "npm run clean && npm run build",
-    "start": "babel-node examples/tasks",
-    "test": "npm run lint && jest"
-  },
-  "dependencies": {
-    "lodash.map": "^4.6.0",
-    "lodash.reduce": "^4.6.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^9.0.0",
-    "babel-preset-everything": "^0.1.2",
-    "eslint": "^5.5.0",
-    "eslint-config-jam": "^0.1.6",
-    "eslint-plugin-jest": "^21.23.0",
-    "jest": "^23.6.0",
-    "rimraf": "^2.6.2"
-  },
   "engines": {
     "node": ">=4.0.0"
   },
@@ -75,5 +47,8 @@
       "**/tests/**/[^_]*.js"
     ],
     "verbose": true
+  },
+  "devDependencies": {
+    "typescript": "^4.0.2"
   }
 }
